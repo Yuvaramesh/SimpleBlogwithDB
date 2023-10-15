@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-animation"></div>
+    <div class="bubble-container">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+    <!-- <div class="imagediv">
+      <img src="house.png" class="house" />
+      <!-- Add your background image or content here -->
+    </div> -->
+    <div class="forms">
+      <!-- action="{{ url_for('predict') }}" -->
+
+      <form class="form">
+        <label for="posted">Posted By:</label>
+        <select class="option" id="posted" name="posted">
+          <option value="Owner or Dealer or Builder">
+            Owner or Dealer or Builder
+          </option>
+          <option value="Owner">Owner</option>
+          <option value="Dealer">Dealer</option>
+          <option value="Builder">Builder</option>
+          <!-- Add options for posted selection -->
+        </select>
+
+        <label for="rera">RERA Registered:</label>
+        <select id="rera" name="rera">
+          <option value="">Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <!-- Add options for RERA selection -->
+        </select>
+
+        <label for="rooms">Number of Rooms:</label>
+        <input
+          type="number"
+          id="rooms"
+          name="rooms"
+          placeholder="Enter number of rooms"
+          required />
+
+        <label for="foot">Square Footage:</label>
+        <input
+          type="number"
+          id="foot"
+          name="foot"
+          placeholder="Enter square footage"
+          required />
+
+        <label for="ready_to_move">Ready to Move:</label>
+        <select id="ready_to_move" name="ready_to_move">
+          <option value="">Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <!-- Add options for ready to move selection -->
+        </select>
+
+        <label for="resale">Resale:</label>
+        <select id="resale" name="resale">
+          <option value="">Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <!-- Add options for resale selection -->
+        </select>
+
+        <label for="location">Location:</label>
+        <select id="location" name="location">
+          <option value="">Select an option</option>
+          <option value="Sundaram Nagar">Sundaram Nagar</option>
+          <option value="Nehru Nagar">Nehru Nagar</option>
+          <option value="Sivakami Nagar">Sivakami Nagar</option>
+          <option value="Meenakshi Nagar">Meenakshi Nagar</option>
+          <option value="Vasantha Nagar">Vasantha Nagar</option>
+          <option value="Annai Teresa Nagar">Annai Teresa Nagar</option>
+          <option value="Meenakshi Sundaram Nagar">
+            Meenakshi Sundaram Nagar
+          </option>
+          <option value="PKN Road">PKN Road</option>
+          <option value="Balavinayagar Nagar">Balavinayagar Nagar</option>
+          <option value="Vengadesa Nagar">Vengadesa Nagar</option>
+          <option value="Indira Nagar">Indira Nagar</option>
+          <option value="Sankar Nagar">Sankar Nagar</option>
+          <option value="Ramasamy Nagar">Ramasamy Nagar</option>
+          <option value="Thiruvalluvar Nagar">Thiruvalluvar Nagar</option>
+          <option value="Jaihindpuram">Jaihindpuram</option>
+          <option value="Viswanathapuram">Viswanathapuram</option>
+          <option value="Gandhi Nagar">Gandhi Nagar</option>
+          <option value="Ambedkar Nagar">Ambedkar Nagar</option>
+          <option value="MGR Nagar">MGR Nagar</option>
+          <option value="Anna Nagar">Anna Nagar</option>
+          <!-- Add options for location selection -->
+        </select>
+        <div class="">
+          <button class="submit1" onclick="prediction()">Predict</button>
+          <a
+            class="submit1"
+            style="text-decoration: none; text-align: center"
+            href="./viewtable.html"
+            >show data</a
+          >
+        </div>
+      </form>
+    </div>
+
+    <p id="result"></p>
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+  </body>
+</html>
