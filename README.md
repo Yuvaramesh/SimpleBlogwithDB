@@ -88,3 +88,23 @@ The provided code represents a simple Express.js server for a project named "sim
 **Ensure all linked files (CSS, JS, and libraries) are correctly referenced and available in the project directory.**
 
 
+## **JavaScript Functions:**
+
+1. **Input Element Selection:**
+   - Variables (`posted`, `rooms`, `foot`) assigned to HTML input elements using `querySelector`.
+
+2. **House Price Calculation Function:**
+   - Function `calculateHousePrice()` retrieves input values and performs house price calculation.
+   - Adjustable parameters: `basePricePerRoom` and `pricePerSquareFoot`.
+
+3. **Prediction Function (Async):**
+   - Async function `prediction` uses Axios to make a POST request to a local server endpoint (`http://127.0.0.1:3010/userdata`).
+   - Sends data (`name`, `room`, `sqfeet`) from input fields.
+   - Uses `withCredentials` for handling server-side authentication.
+   - The result is stored in the variable `val`.
+
+4. **Display Result:**
+   - The calculated house price is displayed in the HTML element with the ID `result`.
+   - Result message includes the prediction price formatted in Indian Rupees.
+
+**Ensure Axios library is correctly linked in the HTML file, and the server endpoint is accessible. Adjust calculation parameters based on specific logic.**
