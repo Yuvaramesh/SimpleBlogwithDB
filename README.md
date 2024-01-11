@@ -1,20 +1,10 @@
-# SimpleBlogwithDB
+# **Simple Blog with DB** 
 
-
-## It is a Simple Website connected with the Database.
-### It is a three tire Web Application.
-# Simple Blog with Database
+ **It is a Simple Website connected with the Database.**
+ **It is a three tire Web Application.**
+ **Simple Blog with Database.**
 
 A minimalistic blog application with database support to manage and display blog posts.
-
-## Table of Contents
-- [Description](#description)
-- [HTML Description](#htmldescription)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 **Description:**
 
@@ -96,3 +86,5 @@ The provided code represents a simple Express.js server for a project named "sim
     - External link to the Axios library.
 
 **Ensure all linked files (CSS, JS, and libraries) are correctly referenced and available in the project directory.**
+
+
